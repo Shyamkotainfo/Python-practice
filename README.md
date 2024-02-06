@@ -1,1 +1,4 @@
 # Python-practice
+
+- numpy
+- pandas
