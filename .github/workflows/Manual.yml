@@ -13,6 +13,13 @@ on:
         type: int
         required: true
 
+      gender:
+        description: 'Gender'
+        type: choice
+        options:
+          - Male
+          - Female
+
 jobs:
   manual:
     runs-on: ubuntu-latest
@@ -24,3 +31,6 @@ jobs:
 
       - name: Age
         run: echo "${{inputs.age }}"
+
+      - name: Gender
+        run: echo "${{inputs.gender}}"
